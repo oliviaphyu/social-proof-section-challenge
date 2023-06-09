@@ -1,0 +1,264 @@
+:root{
+    /* Primary Colors */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral Colors */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-family: 'League Spartan', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+body{
+    background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container{
+    margin-top: 5rem;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .head-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container .head-section .head-one{
+    max-width: 400px;
+}
+
+.head-one h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 2.8rem;
+    color: var(--very-dark-magenta);
+}
+
+.head-one p{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--dark-grayish-magenta);
+}
+
+.container .head-section .head-two{
+    margin-left: 12.8rem;
+}
+
+.head-two .review{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: var(--light-grayish-magenta);
+    border: 1px solid var(--light-grayish-magenta);
+    border-radius: 0.5rem;
+}
+
+.head-two .review .stars, .head-two .report .stars, .head-two .tech .stars{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.head-two .review span{
+    margin-left: 1rem;
+    color: var(--very-dark-magenta);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.head-two .report{
+    margin-left: 2rem;
+    margin-right: -2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--light-grayish-magenta);
+    border: 1px solid var(--light-grayish-magenta);
+    border-radius: 0.5rem;
+}
+
+.head-two .report span{
+    margin-left: 1rem;
+    color: var(--very-dark-magenta);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.head-two .tech{
+    margin-left: 4rem;
+    margin-right: -4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--light-grayish-magenta);
+    border: 1px solid var(--light-grayish-magenta);
+    border-radius: 0.5rem;
+}
+
+.head-two .tech span{
+    margin-left: 1rem;
+    color: var(--very-dark-magenta);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.container .testimonal-section{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.testimonal-section .person-one, .testimonal-section .person-two, .testimonal-section .person-three{
+    border: 1px solid var(--very-dark-magenta);
+    padding: 2rem;
+    /* margin-right: 2rem; */
+    border-radius: 0.5rem;
+    background-color: var(--very-dark-magenta);
+}
+
+.person-two{
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.person-three{
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.person-one .profile, .person-two .profile, .person-three .profile{
+    display: flex;
+    align-items: center;
+}
+
+.person-one .profile img, .person-two .profile img, .person-three .profile img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.person-one .profile .pname{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.person-one .profile .role{
+    color: var(--soft-pink);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+.person-two .profile .pname{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.person-two .profile .role{
+    color: var(--soft-pink);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+.person-three .profile .pname{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.person-three .profile .role{
+    color: var(--soft-pink);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+.person-one p, .person-two p, .person-three p{
+    color: var(--white);
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.attribution{
+    margin: 2rem;
+    text-align: center;
+    color: var(--very-dark-magenta);
+    font-size: 1.2rem;
+  }
+  
+  .attribution a{
+    color: var(--soft-pink);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .attribution a:hover{
+    text-decoration: underline;
+  }
+
+@media (max-width: 850px) {
+    .container{
+        min-width: 300px;
+    }
+
+    .container .head-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .head-section .head-two{
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+
+    .head-two .report, .head-two .tech{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .head-two .review, .head-two .report, .head-two .tech{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container .testimonal-section{
+        flex-direction: column;
+        margin: 2rem auto;
+        max-width: 300px;
+        gap: 0;
+    }
+}
